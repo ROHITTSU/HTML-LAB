@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab-34
+        </title>
+    </head>
+    <body style="background-color: teal;">
+        <fieldset>
+            <h3>
+                 Find If a Number is in an Array 
+            </h3>
+            <script>
+  // Create an array of 5 numbers
+  let numbers = [10, 20, 30, 40, 50];
+  document.write("Given Array was:[10, 20, 30, 40, 50]" + "<br>");
+
+  // Take user input
+  let input = parseInt(prompt("Enter a number to search in the array:"));
+
+  // Check if the number is in the array
+  if (numbers.includes(input)) {
+    document.write(input + " is in the array.");
+  } else {
+    document.write(input + " is NOT in the array.");
+  }
+</script>
+
+        </fieldset>
+    </body>
+</html>

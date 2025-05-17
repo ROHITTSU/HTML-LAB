@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab-22
+        </title>
+    </head>
+    <body style="background-color: teal;">
+        <fieldset>
+            <h3>Simple Calculator. </h3>
+           <script>
+    let no = parseFloat(prompt("Enter the User Number:"));
+    let choice = prompt("Enter the Operator (+, -, /, *):");
+    let num = parseFloat(prompt("Enter the Second Number:"));
+    let result;
+
+    switch (choice) {
+        case "+":
+            result = no + num;
+            document.write("Addition of given numbers is: " + result);
+            break;
+        case "-":
+            result = no - num;
+            document.write("Subtraction of given numbers is: " + result);
+            break;
+        case "*":
+            result = no * num;
+            document.write("Multiplication of given numbers is: " + result);
+            break;
+        case "/":
+            result = no / num;
+            document.write("Division of given numbers is: " + result);
+            break;
+        default:
+            document.write("Invalid operator entered.");
+    }
+</script>
+
+        </fieldset>
+
+    </body>
+</html>

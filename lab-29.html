@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab-29
+        </title>
+    </head>
+    <body style="background-color: teal;">
+        <fieldset>
+            <h3>
+                Count Vowels in a String.
+            </h3>
+            <script>
+  function countVowels(str) {
+    let count = 0;
+    let vowels = "aeiouAEIOU";
+
+    for (let i = 0; i < str.length; i++) {
+      if (vowels.includes(str[i])) {
+        count++;
+      }
+    }
+
+    document.write("Number of vowels in \"" + str + "\" is: " + count);
+  }
+
+  // Example usage
+  countVowels("Hello World");
+</script>
+
+        </fieldset>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab-23
+        </title>
+    </head>
+    <body style="background-color:teal;">
+        <fieldset>
+            <h3>Create Event to change background-color on Clicked.</h3>
+            <button onclick="changeBackground()">Click Me to Change Background</button>
+
+        <script>
+            function changeBackground() {
+                    // Generate a random color
+            let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+         }
+        </script>
+
+        </fieldset>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab-25
+        </title>
+    </head>
+    <body style="background-color: teal;">
+        <fieldset>
+            <h3>Find Maximun and Minimum from an Array.</h3>
+            <script>
+  function findMaxNumber(arr) {
+    let max = arr[0]; // Start with the first element
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+        max = arr[i]; // Update max if current element is larger
+      }
+    }
+    return max;
+  }
+
+  // Example array
+  let numbers = [45, 22, 89, 16, 78];
+document.write("Given Array:[45, 22, 89, 16, 78]" + "<br>" );
+  // Call the function and display result in console
+ document.write("The maximum number is: " + findMaxNumber(numbers));
+</script>
+
+
+        </fieldset>
+    </body>
+</html>

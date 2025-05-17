@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab-38
+        </title>
+    </head>
+    <body style="background-color: teal;">
+        <fieldset>
+            <h3>
+                 Show/Hide Text on Button Click
+            </h3>
+            <button onclick="toggleVisibility()">Show/Hide Text</button>
+
+<p id="textLine">This is the line of text to show or hide.</p>
+
+<script>
+  function toggleVisibility() {
+    const text = document.getElementById("textLine");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  // Initially hide the text (optional)
+  document.getElementById("textLine").style.display = "none";
+</script>
+
+        </fieldset>
+    </body>
+</html>
