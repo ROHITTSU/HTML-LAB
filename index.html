@@ -1,61 +1,280 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-<title>Lab Work</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lab Work - Practical HTML & JS Labs</title>
+<style>
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+  }
+  header > div h1 {
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  }
+  header > div p {
+    font-size: 1.2rem;
+    color: #dcd6f7;
+    margin: 0;
+  }
+  header img {
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  }
+
+  /* Container for cards */
+  .labs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  /* Card style */
+  .lab-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .lab-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255,255,255,0.3);
+  }
+
+  .lab-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e2e8f0;
+  }
+
+  .lab-card a {
+    align-self: flex-start;
+    background: #4f46e5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(79,70,229,0.4);
+    transition: background-color 0.3s ease;
+  }
+  .lab-card a:hover {
+    background: #3b33b6;
+  }
+
+  /* Responsive text sizes */
+  @media (max-width: 600px) {
+    header > div h1 {
+      font-size: 2rem;
+    }
+    .lab-card h3 {
+      font-size: 1rem;
+    }
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    header img {
+      margin-top: 15px;
+      height: 60px;
+    }
+  }
+</style>
 </head>
 <body>
-<style>
-  body{
-          background-image:url("a.jpg");
-      }
-  h1{
-     text-align:center;
-     background-color:lightblue;
-     font-size:55px;
-    }
 
-</style>
-<fieldset> 
-<h1>Welcome to HTML practical work</h1>
-<h3>Click below for Basic HTML Structure. (Lab-1)</h3>
-<a href="lab1.html">Click Here</a>
-<h3>Click below for HTML Tags Example. (Lab-2)</h3>
-<a href="lab2.html">Click Here</a>
-<h3>Click below for Lists in HTML. (Lab-3)</h3>
-<a href="lab3.html">Click Here</a>
-<h3>Click below for Example of HTML table. (Lab-4)</h3>
-<a href="lab4.html">Click Here</a>
-<h3>Click below for Example of Hyper link. (Lab-5)</h3>
-<a href="lab5.html">Click Here</a>
-<h3>Click below for Example of Inline CSS. (Lab-6)</h3>
-<a href="inline.html">Click Here</a>
-<h3>Click below for Example of Internal CSS. (Lab-7)</h3>
-<a href="internalccs.html">Click Here</a>
-<h3>Click below for Example of HTML Form. (Lab-8)</h3>
-<a href="form.html">Click Here</a>
-<img src="logo.jpeg" alt="University Logo" style="position: absolute; bottom: -120px; right: 10px; width: 200px; height: auto;">
-<h3>Click below for Example of Block Element in HTML. (Lab-9)</h3>
-<a href="block.html">Click Here</a>
-<h3>Click below for Example of Styling List using CSS in HTML. (Lab-10)</h3>
-<a href="list.html">Click Here</a>
-<h3>Click below for introduction to Javascript. (Lab-11)</h3>
-<a href="j1.html">Click Here</a>
-<h3>Click below for Arithmetic Operaters in Javascript. (Lab-12)</h3>
-<a href="j2.html">Click Here</a>
-<h3>Click below for Comparison Operator in Javascript. (Lab-13)</h3>
-<a href="j3.html">Click Here</a>
-<h3>Click below for (If-else)statement in Javascript. (Lab-14)</h3>
-<a href="j4.html">Click Here</a>
-<h3>Click below for (Nested If-else)statement in Javascript. (Lab-15)</h3>
-<a href="j5.html">Click Here</a>
-<h3>Click below for (Switch-case)statement in Javascript. (Lab-16)</h3>
-<a href="j6.html">Click Here</a>
-<h3>Click below for (For loop) in Javascript. (Lab-17)</h3>
-<a href="j7.html">Click Here</a>
-<h3>Click below for (While loop) in Javascript. (Lab-18)</h3>
-<a href="j8.html">Click Here</a>
-<h3>Click below for (Do-While loop) in Javascript. (Lab-19)</h3>
-<a href="j9.html">Click Here</a>
-</fieldset>
+<header>
+  <div>
+    <h1>Welcome to HTML Practical Work</h1>
+    <p><i>Rohit Shukla Sem-2 Bsc.cs</i></p>
+  </div>
+  <img src="logo.jpeg" alt="University Logo" />
+</header>
+
+<div class="labs-container">
+  <div class="lab-card">
+    <h3>Basic HTML Structure (Lab-1)</h3>
+    <a href="lab1.html">Open Lab 1</a>
+  </div>
+  <div class="lab-card">
+    <h3>HTML Tags Example (Lab-2)</h3>
+    <a href="lab2.html">Open Lab 2</a>
+  </div>
+  <div class="lab-card">
+    <h3>Lists in HTML (Lab-3)</h3>
+    <a href="lab3.html">Open Lab 3</a>
+  </div>
+  <div class="lab-card">
+    <h3>Example of HTML Table (Lab-4)</h3>
+    <a href="lab4.html">Open Lab 4</a>
+  </div>
+  <div class="lab-card">
+    <h3>Example of Hyperlink (Lab-5)</h3>
+    <a href="lab5.html">Open Lab 5</a>
+  </div>
+  <div class="lab-card">
+    <h3>Example of Inline CSS (Lab-6)</h3>
+    <a href="inline.html">Open Lab 6</a>
+  </div>
+  <div class="lab-card">
+    <h3>Example of Internal CSS (Lab-7)</h3>
+    <a href="internalccs.html">Open Lab 7</a>
+  </div>
+  <div class="lab-card">
+    <h3>Example of HTML Form (Lab-8)</h3>
+    <a href="form.html">Open Lab 8</a>
+  </div>
+  <div class="lab-card">
+    <h3>Example of Block Element (Lab-9)</h3>
+    <a href="block.html">Open Lab 9</a>
+  </div>
+  <div class="lab-card">
+    <h3>Styling List Using CSS (Lab-10)</h3>
+    <a href="list.html">Open Lab 10</a>
+  </div>
+  <div class="lab-card">
+    <h3>Introduction to Javascript (Lab-11)</h3>
+    <a href="j1.html">Open Lab 11</a>
+  </div>
+  <div class="lab-card">
+    <h3>Arithmetic Operators in Javascript (Lab-12)</h3>
+    <a href="j2.html">Open Lab 12</a>
+  </div>
+  <div class="lab-card">
+    <h3>Comparison Operator in Javascript (Lab-13)</h3>
+    <a href="j3.html">Open Lab 13</a>
+  </div>
+  <div class="lab-card">
+    <h3>If-else Statement in Javascript (Lab-14)</h3>
+    <a href="j4.html">Open Lab 14</a>
+  </div>
+  <div class="lab-card">
+    <h3>Nested If-else Statement in Javascript (Lab-15)</h3>
+    <a href="j5.html">Open Lab 15</a>
+  </div>
+  <div class="lab-card">
+    <h3>Switch-case Statement in Javascript (Lab-16)</h3>
+    <a href="j6.html">Open Lab 16</a>
+  </div>
+  <div class="lab-card">
+    <h3>For Loop in Javascript (Lab-17)</h3>
+    <a href="j7.html">Open Lab 17</a>
+  </div>
+  <div class="lab-card">
+    <h3>While Loop in Javascript (Lab-18)</h3>
+    <a href="j8.html">Open Lab 18</a>
+  </div>
+  <div class="lab-card">
+    <h3>Do-While Loop in Javascript (Lab-19)</h3>
+    <a href="j9.html">Open Lab 19</a>
+  </div>
+  <div class="lab-card">
+    <h3>Even/Odd Number Check (Lab-20)</h3>
+    <a href="lab-20.html">Open Lab 20</a>
+  </div>
+  <div class="lab-card">
+    <h3> Sum Of First N Numbers (Lab-21)</h3>
+    <a href="lab-21.html">Open Lab 21</a>
+  </div>
+   <div class="lab-card">
+    <h3>Simple Calculator (Lab-22)</h3>
+    <a href="lab-22.html">Open Lab 22</a>
+  </div>
+   <div class="lab-card">
+    <h3> Create Event to change background-color on Clicked (lab-23)</h3>
+    <a href="lab-23.html">Open Lab 23</a>
+  </div>
+   <div class="lab-card">
+    <h3>Print All Elements in Array (lab-24)</h3>
+    <a href="lab-24.html">Open Lab 24</a>
+  </div>
+   <div class="lab-card">
+    <h3>Find Maximun and Minimum from an Array (lab-25)</h3>
+    <a href="lab-25.html">Open Lab 25</a>
+  </div>
+   <div class="lab-card">
+    <h3>Object Creation and Access (Objects) (lab-26)</h3>
+    <a href="lab-26.html">Open Lab 26</a>
+  </div>
+   <div class="lab-card">
+    <h3>Palindrome Checker (lab-27)</h3>
+    <a href="lab-27.html">Open Lab 27</a>
+  </div>
+   <div class="lab-card">
+    <h3> Toggle Text Using Button(Lab-28)</h3>
+    <a href="lab-28.html">Open Lab 28</a>
+  </div>
+   <div class="lab-card">
+    <h3> Count Vowels in a String (lab-29)</h3>
+    <a href="lab-29.html">Open Lab 29</a>
+  </div>
+    <div class="lab-card">
+    <h3>  Check Positive or Negative Number (Lab-30)</h3>
+    <a href="lab-30.html">Open Lab 30</a>
+  </div>
+  <div class="lab-card">
+    <h3> Button Click Alert (lab-31)</h3>
+    <a href="lab-31.html">Open Lab 31</a>
+  </div>
+  <div class="lab-card">
+    <h3>Add Two Numbers Using Function (lab-32)</h3>
+    <a href="lab-32.html">Open Lab 32</a>
+  </div>
+  <div class="lab-card">
+    <h3> Display Items in an Array (lab-33)</h3>
+    <a href="lab-33.html">Open Lab 33</a>
+  </div>
+  <div class="lab-card">
+    <h3> Find If a Number is in an Array (lab-34)</h3>
+    <a href="lab-34.html">Open Lab 34</a>
+  </div>
+  <div class="lab-card">
+    <h3> Create a Simple Object (lab-35)</h3>
+    <a href="lab-35.html">Open Lab 35</a>
+  </div>
+  <div class="lab-card">
+    <h3> Even Numbers from 1 to 20  (lab-36)</h3>
+    <a href="lab-36.html">Open Lab 36</a>
+  </div>
+  <div class="lab-card">
+    <h3> Count Characters in a String (lab-37)</h3>
+    <a href="lab-37.html">Open Lab 37</a>
+  </div>
+  <div class="lab-card">
+    <h3> Show/Hide Text on Button Click (lab-38)</h3>
+    <a href="lab-38.html">Open Lab 38</a>
+  </div>
+</div> 
+
 </body>
 </html>
